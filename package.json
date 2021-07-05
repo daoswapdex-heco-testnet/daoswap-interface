@@ -1,5 +1,5 @@
 {
-  "name": "@daoswap-heco-testnet/interface",
+  "name": "@daoswapdex-heco-testnet/daoswap-interface",
   "description": "Daoswap Interface",
   "homepage": ".",
   "private": true,

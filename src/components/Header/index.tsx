@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 import styled from 'styled-components'
 
+import { ExternalLink } from '../../theme'
 import Logo from '../../assets/svg/logo.svg'
 import LogoDark from '../../assets/svg/logo_white.svg'
 import { useActiveWeb3React } from '../../hooks'
@@ -195,6 +196,33 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
+const StyledExternalLinkLink = styled(ExternalLink).attrs({
+  activeClassName
+})`
+  ${({ theme }) => theme.flexRowNoWrap}
+  align-items: left;
+  border-radius: 3rem;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: ${({ theme }) => theme.text2};
+  font-size: 1rem;
+  width: fit-content;
+  margin: 0 12px;
+  font-weight: 500;
+
+  &.${activeClassName} {
+    border-radius: 12px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text1};
+  }
+
+  :hover,
+  :focus {
+    color: ${({ theme }) => darken(0.1, theme.text1)};
+  }
+`
+
 const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   [ChainId.RINKEBY]: 'Rinkeby',
   [ChainId.ROPSTEN]: 'Ropsten',
@@ -248,6 +276,9 @@ export default function Header() {
           <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
             {t('Governace')}
           </StyledNavLink>
+          <StyledExternalLinkLink id={`bridge-nav-link`} href={'https://test.bridge.heco.daoswap.cc'}>
+            {t('Bridge')}
+          </StyledExternalLinkLink>
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
