@@ -66,7 +66,7 @@ const MenuFlyout = styled.span`
   z-index: 100;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    top: -17.25rem;
+    top: -12.25rem;
   `};
 `
 
@@ -74,6 +74,21 @@ const MenuItem = styled(ExternalLink)`
   flex: 1;
   padding: 0.5rem 0.5rem;
   color: ${({ theme }) => theme.text2};
+  :hover {
+    color: ${({ theme }) => theme.text1};
+    cursor: pointer;
+    text-decoration: none;
+  }
+  > svg {
+    margin-right: 8px;
+  }
+`
+
+const MenuItemHref = styled.a`
+  flex: 1;
+  padding: 0.5rem 0.5rem;
+  color: ${({ theme }) => theme.text2};
+  text-decoration: none;
   :hover {
     color: ${({ theme }) => theme.text1};
     cursor: pointer;
@@ -115,6 +130,10 @@ export default function Menu() {
             <MessageCircle size={14} />
             Twitter
           </MenuItem>
+          <MenuItemHref id="link" href="https://test.bridge.heco.daoswap.cc" target="_self">
+            <MessageCircle size={14} />
+            {t('Bridge')}
+          </MenuItemHref>
         </MenuFlyout>
       )}
     </StyledMenu>

@@ -218,6 +218,10 @@ const StyledHrefLink = styled.a`
   :focus {
     color: ${({ theme }) => darken(0.1, theme.text1)};
   }
+
+  ${({ theme }) => theme.mediaWidth.upToExtraSmall`
+    display: none;
+  `}
 `
 
 const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
