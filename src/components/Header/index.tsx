@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next'
 
 import styled from 'styled-components'
 
-import { ExternalLink } from '../../theme'
 import Logo from '../../assets/svg/logo.svg'
 import LogoDark from '../../assets/svg/logo_white.svg'
 import { useActiveWeb3React } from '../../hooks'
@@ -196,9 +195,7 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
-const StyledExternalLinkLink = styled(ExternalLink).attrs({
-  activeClassName
-})`
+const StyledHrefLink = styled.a`
   ${({ theme }) => theme.flexRowNoWrap}
   align-items: left;
   border-radius: 3rem;
@@ -276,9 +273,9 @@ export default function Header() {
           <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
             {t('Governace')}
           </StyledNavLink>
-          <StyledExternalLinkLink id={`bridge-nav-link`} href={'https://test.bridge.heco.daoswap.cc'}>
+          <StyledHrefLink href="https://test.bridge.heco.daoswap.cc" target="_self">
             {t('Bridge')}
-          </StyledExternalLinkLink>
+          </StyledHrefLink>
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
