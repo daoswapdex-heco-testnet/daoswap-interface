@@ -6,6 +6,14 @@
   "tokens": [
     {
       "chainId": 256,
+      "address": "0xd2f169c79553654452a3889b210AEeF494eB2374",
+      "name": "Daoswap",
+      "symbol": "DAO",
+      "decimals": 18,
+      "logoURI": "https://test.app.heco.daoswap.cc/daoswap.svg"
+    },
+    {
+      "chainId": 256,
       "address": "0xf9566aD895BfB111034C8625C65B03836c697479",
       "name": "Daoswap",
       "symbol": "DOI",
