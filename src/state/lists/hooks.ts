@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { ChainId, Token } from '@daoswap-heco-testnet/daoswap-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'

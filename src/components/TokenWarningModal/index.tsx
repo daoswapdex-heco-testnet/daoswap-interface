@@ -1,4 +1,4 @@
-import { Token } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Token } from '@daoswap-heco-testnet/daoswap-sdk'
 import { transparentize } from 'polished'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'

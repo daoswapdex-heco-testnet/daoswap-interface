@@ -1,5 +1,5 @@
-// import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@daoswapdex-heco-testnet/daoswap-sdk'
-import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswapdex-heco-testnet/daoswap-sdk'
+// import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, WETH, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
 import { useMemo } from 'react'
 // TODO:Daoswap ERC20
 import { UNI } from '../../constants'

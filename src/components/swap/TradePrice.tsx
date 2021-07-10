@@ -1,5 +1,5 @@
 import React from 'react'
-import { Price } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Price } from '@daoswap-heco-testnet/daoswap-sdk'
 import { useContext } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
 import { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { usePair } from '../../data/Reserves'

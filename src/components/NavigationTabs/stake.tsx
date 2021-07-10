@@ -9,7 +9,7 @@ const Tabs = styled.div`
   align-items: center;
   border-radius: 12px;
   justify-content: space-evenly;
-  background: #00cc99;
+  background: #ffffff;
 `
 
 const activeClassName = 'ACTIVE'
@@ -33,7 +33,7 @@ const StyledNavLink = styled(NavLink).attrs({
     border-radius: 12px;
     font-weight: 500;
     color: #ffffff;
-    background: #33cc00;
+    background: #93b954;
   }
 
   :hover,

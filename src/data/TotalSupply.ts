@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { Token, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Token, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
 import { useTokenContract } from '../hooks/useContract'
 import { useSingleCallResult } from '../state/multicall/hooks'
 

@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, ETHER, Token } from '@daoswap-heco-testnet/daoswap-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 

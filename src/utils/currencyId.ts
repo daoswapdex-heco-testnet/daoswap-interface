@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, ETHER, Token } from '@daoswap-heco-testnet/daoswap-sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'HT'

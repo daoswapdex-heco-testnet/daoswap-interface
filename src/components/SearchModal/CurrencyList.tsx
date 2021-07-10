@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from '@daoswap-heco-testnet/daoswap-sdk'
 import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 'react'
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'

@@ -1,7 +1,7 @@
 import { Contract } from '@ethersproject/contracts'
 // import { abi as STAKING_REWARDS_ABI } from '@daoswap-heco/liquidity-staker/build/StakingRewards.json'
 import { abi as STAKING_REWARDS_ABI } from '../constants/contractJson/StakingRewards.json'
-import { ChainId, WETH } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { ChainId, WETH } from '@daoswap-heco-testnet/daoswap-sdk'
 // import { abi as IUniswapV2PairABI } from '@daoswap-heco/daoswap-core/build/IUniswapV2Pair.json'
 import { abi as IUniswapV2PairABI } from '../constants/contractJson/IUniswapV2Pair.json'
 import { useMemo } from 'react'

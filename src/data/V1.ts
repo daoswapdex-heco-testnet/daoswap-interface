@@ -14,7 +14,7 @@ import {
   Trade,
   TradeType,
   WETH
-} from '@daoswapdex-heco-testnet/daoswap-sdk'
+} from '@daoswap-heco-testnet/daoswap-sdk'
 import { useMemo } from 'react'
 import { useActiveWeb3React } from '../hooks'
 import { useAllTokens } from '../hooks/Tokens'

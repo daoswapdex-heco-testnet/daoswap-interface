@@ -1,4 +1,4 @@
-import { Currency } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency } from '@daoswap-heco-testnet/daoswap-sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

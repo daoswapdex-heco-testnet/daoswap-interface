@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { CurrencyAmount, ETHER, JSBI } from '@daoswap-heco-testnet/daoswap-sdk'
 import { MIN_ETH } from '../constants'
 
 /**

@@ -9,7 +9,7 @@ import {
   Token,
   TokenAmount,
   WETH
-} from '@daoswapdex-heco-testnet/daoswap-sdk'
+} from '@daoswap-heco-testnet/daoswap-sdk'
 import React, { useCallback, useMemo, useState } from 'react'
 // import ReactGA from 'react-ga'
 import { Redirect, RouteComponentProps } from 'react-router'

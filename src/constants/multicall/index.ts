@@ -1,4 +1,4 @@
-import { ChainId } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { ChainId } from '@daoswap-heco-testnet/daoswap-sdk'
 import MULTICALL_ABI from './abi.json'
 
 const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {

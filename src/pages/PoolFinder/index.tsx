@@ -1,4 +1,4 @@
-import { Currency, ETHER, JSBI, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { Plus } from 'react-feather'
 import { Text } from 'rebass'

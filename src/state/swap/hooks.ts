@@ -1,7 +1,7 @@
 import useENS from '../../hooks/useENS'
 import { Version } from '../../hooks/useToggledVersion'
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@daoswap-heco-testnet/daoswap-sdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -91,9 +91,9 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0xDCD3038d78a8E677b76350Fb83eb2843aA89a4fD', // v2 factory
+  '0x8F79864dd95689005d7D7469cFfa46ae446831a4', // v2 factory
   '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
-  '0x16Ee14a128886A9a001Cb71Ca9Ff54e889Cfc359' // v2 router 02
+  '0x0757FDD5175B1B48C334FF2eEFd26E151e47fe36' // v2 router 02
 ]
 
 /**

@@ -6,7 +6,7 @@ import { BigNumber } from '@ethersproject/bignumber'
 // import { abi as IUniswapV2Router02ABI } from '@daoswap-heco/daoswap-periphery/build/IUniswapV2Router02.json'
 import { abi as IUniswapV2Router02ABI } from '../constants/contractJson/IUniswapV2Router02.json'
 import { ROUTER_ADDRESS } from '../constants'
-import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@daoswap-heco-testnet/daoswap-sdk'
 import { TokenAddressMap } from '../state/lists/hooks'
 
 // returns the checksummed address if the address is valid, otherwise returns false

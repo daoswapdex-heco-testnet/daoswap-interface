@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, Percent, Price } from '@daoswap-heco-testnet/daoswap-sdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

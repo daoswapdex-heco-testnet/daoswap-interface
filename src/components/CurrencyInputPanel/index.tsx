@@ -1,4 +1,4 @@
-import { Currency, Pair } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Currency, Pair } from '@daoswap-heco-testnet/daoswap-sdk'
 import React, { useState, useContext, useCallback } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { darken } from 'polished'

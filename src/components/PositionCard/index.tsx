@@ -1,4 +1,4 @@
-import { JSBI, Pair, Percent } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { JSBI, Pair, Percent } from '@daoswap-heco-testnet/daoswap-sdk'
 import { darken } from 'polished'
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'

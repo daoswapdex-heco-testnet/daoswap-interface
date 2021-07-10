@@ -1,4 +1,4 @@
-import { Percent } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { Percent } from '@daoswap-heco-testnet/daoswap-sdk'
 import React from 'react'
 import { ONE_BIPS } from '../../constants'
 import { warningSeverity } from '../../utils/prices'
