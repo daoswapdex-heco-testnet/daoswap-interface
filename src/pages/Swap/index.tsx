@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI, Token, Trade } from '@daoswap-heco-testnet/daoswap-sdk'
+import { CurrencyAmount, JSBI, Token, Trade } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 // import ReactGA from 'react-ga'

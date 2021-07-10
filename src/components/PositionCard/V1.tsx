@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
-import { Token, TokenAmount, WETH } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Token, TokenAmount, WETH } from '@daoswapdex-heco-testnet/daoswap-sdk'
 
 import { Text } from 'rebass'
 import { AutoColumn } from '../Column'

@@ -1,4 +1,4 @@
-import { ChainId } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import { NavLink } from 'react-router-dom'

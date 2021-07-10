@@ -1,4 +1,4 @@
-import { Percent } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Percent } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { ALLOWED_PRICE_IMPACT_HIGH, PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN } from '../../constants'
 
 /**

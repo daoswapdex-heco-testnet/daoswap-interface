@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Currency, currencyEquals, ETHER, TokenAmount, WETH } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import React, { useCallback, useContext, useState } from 'react'
 import { Plus } from 'react-feather'
 // import ReactGA from 'react-ga'

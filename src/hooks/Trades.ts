@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Currency, CurrencyAmount, Pair, Token, Trade } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

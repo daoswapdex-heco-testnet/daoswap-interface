@@ -4,7 +4,7 @@
   "homepage": ".",
   "private": true,
   "devDependencies": {
-    "@daoswap-heco-testnet/daoswap-sdk": "^1.0.4",
+    "@daoswapdex-heco-testnet/daoswap-sdk": "^1.0.1",
     "@uniswap/token-lists": "^1.0.0-beta.21",
     "@ethersproject/experimental": "^5.0.1",
     "@popperjs/core": "^2.4.4",

@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId } from '@daoswapdex-heco-testnet/daoswap-sdk'
 
 export interface SerializableTransactionReceipt {
   to: string

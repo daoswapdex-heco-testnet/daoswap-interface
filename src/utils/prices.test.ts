@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { computeTradePriceBreakdown } from './prices'
 
 describe('prices', () => {

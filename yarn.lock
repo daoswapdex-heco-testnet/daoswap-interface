@@ -1179,9 +1179,9 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@daoswap-heco-testnet/daoswap-sdk@^1.0.2":
+"@daoswapdex-heco-testnet/daoswap-sdk@^1.0.2":
   version "1.0.2"
-  resolved "https://registry.npmjs.org/@daoswap-heco-testnet/daoswap-sdk/-/daoswap-sdk-1.0.2.tgz#2f7c36114527a48d0c3f97a13a9b504bdbb063aa"
+  resolved "https://registry.npmjs.org/@daoswapdex-heco-testnet/daoswap-sdk/-/daoswap-sdk-1.0.2.tgz#2f7c36114527a48d0c3f97a13a9b504bdbb063aa"
   integrity sha512-j/o07E3IJConnGkTQ7tMKjXVXVWqkY0a6Y9L8cTV30DhfAKYeCUhxlVmBrNyTDLGd4yd9hLrB9SAF4TiiUwn4w==
   dependencies:
     big.js "^5.2.2"

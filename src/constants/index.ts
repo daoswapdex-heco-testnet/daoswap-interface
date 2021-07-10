@@ -1,9 +1,9 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
 import { injected, walletconnect } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x0757FDD5175B1B48C334FF2eEFd26E151e47fe36'
+export const ROUTER_ADDRESS = '0x16Ee14a128886A9a001Cb71Ca9Ff54e889Cfc359'
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
 
@@ -24,7 +24,7 @@ export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C
 // TODO:Daoswap 添加 Rinkeby 链上的代币信息
 export const DAO_HECO_TESTNET = new Token(
   ChainId.HECO_TESTNET,
-  '0xf9566aD895BfB111034C8625C65B03836c697479',
+  '0xd2f169c79553654452a3889b210AEeF494eB2374',
   18,
   'DAO',
   'Daoswap'
@@ -44,7 +44,7 @@ export const PROPOSAL_LENGTH_IN_SECS = AVERAGE_BLOCK_TIME_IN_SECS * PROPOSAL_LEN
 
 export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
 
-const UNI_ADDRESS = '0xf9566aD895BfB111034C8625C65B03836c697479'
+const UNI_ADDRESS = '0xd2f169c79553654452a3889b210AEeF494eB2374'
 export const DAO_ADDRESS = UNI_ADDRESS
 export const UNI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Uniswap'),

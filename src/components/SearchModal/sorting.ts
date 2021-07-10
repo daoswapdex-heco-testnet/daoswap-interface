@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Token, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { useMemo } from 'react'
 import { useAllTokenBalances } from '../../state/wallet/hooks'
 
