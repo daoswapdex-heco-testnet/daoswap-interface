@@ -1,4 +1,4 @@
-import { JSBI, Token, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
+import { JSBI, Token, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { BigNumber } from 'ethers'
 import { STAKING_GENESIS } from '../state/stake/hooks'
 

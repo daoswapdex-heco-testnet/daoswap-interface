@@ -1,5 +1,5 @@
 import React from 'react'
-import { CurrencyAmount, Fraction, JSBI } from '@daoswap-heco-testnet/daoswap-sdk'
+import { CurrencyAmount, Fraction, JSBI } from '@daoswapdex-heco-testnet/daoswap-sdk'
 
 const CURRENCY_AMOUNT_MIN = new Fraction(JSBI.BigInt(1), JSBI.BigInt(1000000))
 

@@ -1,4 +1,4 @@
-import { ChainId } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import { NavLink } from 'react-router-dom'
@@ -277,7 +277,10 @@ export default function Header() {
           <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
             {t('Governace')}
           </StyledNavLink>
-          <StyledHrefLink href="https://test.bridge.heco.daoswap.cc" target="_self">
+          <StyledHrefLink href="https://info.heco.daoswap.cc" target="_self">
+            {t('Charts')}
+          </StyledHrefLink>
+          <StyledHrefLink href="https://bridge.heco.daoswap.cc/token/DAO" target="_self">
             {t('Bridge')}
           </StyledHrefLink>
         </HeaderLinks>

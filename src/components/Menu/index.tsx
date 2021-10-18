@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BookOpen, Info, MessageCircle } from 'react-feather'
+import { BookOpen, Info, MessageCircle, PieChart, Link } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -66,7 +66,7 @@ const MenuFlyout = styled.span`
   z-index: 100;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
-    top: -12.25rem;
+    top: -14.25rem;
   `};
 `
 
@@ -130,8 +130,12 @@ export default function Menu() {
             <MessageCircle size={14} />
             Twitter
           </MenuItem>
-          <MenuItemHref id="link" href="https://test.bridge.heco.daoswap.cc" target="_self">
-            <MessageCircle size={14} />
+          <MenuItemHref id="link" href="https://info.heco.daoswap.cc" target="_self">
+            <PieChart size={14} />
+            {t('Charts')}
+          </MenuItemHref>
+          <MenuItemHref id="link" href="https://bridge.heco.daoswap.cc/token/DAO" target="_self">
+            <Link size={14} />
             {t('Bridge')}
           </MenuItemHref>
         </MenuFlyout>

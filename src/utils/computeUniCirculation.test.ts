@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Token, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId, JSBI, Token, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { BigNumber } from 'ethers'
 import { ZERO_ADDRESS } from '../constants'
 import { computeUniCirculation } from './computeUniCirculation'

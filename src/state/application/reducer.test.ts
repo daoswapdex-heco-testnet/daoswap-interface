@@ -1,4 +1,4 @@
-import { ChainId } from '@daoswap-heco-testnet/daoswap-sdk'
+import { ChainId } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { createStore, Store } from 'redux'
 import { addPopup, ApplicationModal, removePopup, setOpenModal, updateBlockNumber } from './actions'
 import reducer, { ApplicationState } from './reducer'

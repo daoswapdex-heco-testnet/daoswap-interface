@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from '@daoswap-heco-testnet/daoswap-sdk'
+import { currencyEquals, Trade } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

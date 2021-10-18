@@ -42,7 +42,8 @@ export function Countdown({ exactEnd }: { exactEnd?: Date }) {
       message = t('Rewards end in')
       timeRemaining = timeUntilEnd
     } else {
-      message = t('Rewards have ended!')
+      // message = t('Rewards have ended!')
+      message = t('Rewards not started yet.')
       timeRemaining = Infinity
     }
   }

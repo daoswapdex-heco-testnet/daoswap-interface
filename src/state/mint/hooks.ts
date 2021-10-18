@@ -1,4 +1,13 @@
-import { Currency, CurrencyAmount, ETHER, JSBI, Pair, Percent, Price, TokenAmount } from '@daoswap-heco-testnet/daoswap-sdk'
+import {
+  Currency,
+  CurrencyAmount,
+  ETHER,
+  JSBI,
+  Pair,
+  Percent,
+  Price,
+  TokenAmount
+} from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { useCallback, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { PairState, usePair } from '../../data/Reserves'

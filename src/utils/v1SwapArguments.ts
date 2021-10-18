@@ -7,7 +7,7 @@ import {
   Trade,
   TradeOptionsDeadline,
   TradeType
-} from '@daoswap-heco-testnet/daoswap-sdk'
+} from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { getTradeVersion } from '../data/V1'
 import { Version } from '../hooks/useToggledVersion'
 

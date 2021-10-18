@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from 'react'
 import styled, { ThemeContext } from 'styled-components'
-import { Pair } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Pair } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { Link } from 'react-router-dom'
 import { SwapPoolTabs } from '../../components/NavigationTabs'
 
@@ -125,7 +125,7 @@ export default function Pool() {
               <RowBetween>
                 <TYPE.white fontSize={14}>
                   {t(
-                    'Liquidity providers earn a 0.3% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.'
+                    'Liquidity providers earn a 0.2% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.'
                   )}
                 </TYPE.white>
               </RowBetween>
@@ -178,7 +178,7 @@ export default function Pool() {
               <>
                 <ButtonSecondary>
                   <RowBetween>
-                    <ExternalLink href={'https://info.daoswap.cc/account/' + account}>
+                    <ExternalLink href={'https://info.heco.daoswap.cc/account/' + account}>
                       {t('Account analytics and accrued fees')}
                     </ExternalLink>
                     <span> ↗</span>

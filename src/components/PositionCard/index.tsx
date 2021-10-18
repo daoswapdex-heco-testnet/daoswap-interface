@@ -1,4 +1,4 @@
-import { JSBI, Pair, Percent } from '@daoswap-heco-testnet/daoswap-sdk'
+import { JSBI, Pair, Percent } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { darken } from 'polished'
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'
@@ -151,7 +151,7 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
               ⭐️
             </span>{' '}
             {t(
-              'By adding liquidity you&apos;ll earn 0.3% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.'
+              'By adding liquidity you&apos;ll earn 0.2% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.'
             )}
           </TYPE.subHeader>
         </LightCard>
@@ -285,7 +285,7 @@ export default function FullPositionCard({ pair, border }: PositionCardProps) {
             <ButtonSecondary padding="8px" borderRadius="8px" style={{ display: 'none' }}>
               <ExternalLink
                 style={{ width: '100%', textAlign: 'center' }}
-                href={`https://info.daoswap.cc/account/${account}`}
+                href={`https://info.heco.daoswap.cc/account/${account}`}
               >
                 {t('View accrued fees and analytics')}
                 <span style={{ fontSize: '11px' }}>↗</span>

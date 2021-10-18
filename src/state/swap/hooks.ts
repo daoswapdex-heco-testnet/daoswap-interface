@@ -1,7 +1,7 @@
 import useENS from '../../hooks/useENS'
 import { Version } from '../../hooks/useToggledVersion'
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@daoswap-heco-testnet/daoswap-sdk'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount, Trade } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -17,9 +17,10 @@ import { Field, replaceSwapState, selectCurrency, setRecipient, switchCurrencies
 import { SwapState } from './reducer'
 import useToggledVersion from '../../hooks/useToggledVersion'
 import { useUserSlippageTolerance } from '../user/hooks'
-import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown, warningSeverity } from '../../utils/prices'
+// import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown, warningSeverity } from '../../utils/prices'
+import { computeSlippageAdjustedAmounts } from '../../utils/prices'
 import { useTranslation } from 'react-i18next'
-import { DAO_ADDRESS } from '../../constants'
+// import { DAO_ADDRESS } from '../../constants'
 
 export function useSwapState(): AppState['swap'] {
   return useSelector<AppState, AppState['swap']>(state => state.swap)
@@ -91,9 +92,9 @@ export function tryParseAmount(value?: string, currency?: Currency): CurrencyAmo
 }
 
 const BAD_RECIPIENT_ADDRESSES: string[] = [
-  '0x8F79864dd95689005d7D7469cFfa46ae446831a4', // v2 factory
+  '0x6e315D2e71282f5e64C87baBe5F2C67A3FBE291c', // v2 factory
   '0xf164fC0Ec4E93095b804a4795bBe1e041497b92a', // v2 router 01
-  '0x0757FDD5175B1B48C334FF2eEFd26E151e47fe36' // v2 router 02
+  '0x78093c93e50549b3f3414f4ed81Fb735c928c555' // v2 router 02
 ]
 
 /**
@@ -179,13 +180,13 @@ export function useDerivedSwapInfo(): {
   //   inputError = inputError ?? t('DAO is not tradable')
   // }
 
-  if (v2Trade && DAO_ADDRESS === inputCurrencyId) {
-    const { priceImpactWithoutFee } = computeTradePriceBreakdown(v2Trade)
-    const priceImpactSeverity = warningSeverity(priceImpactWithoutFee)
-    if (priceImpactSeverity >= 1) {
-      inputError = inputError ?? t('Price Impact High')
-    }
-  }
+  // if (v2Trade && DAO_ADDRESS === inputCurrencyId) {
+  //   const { priceImpactWithoutFee } = computeTradePriceBreakdown(v2Trade)
+  //   const priceImpactSeverity = warningSeverity(priceImpactWithoutFee)
+  //   if (priceImpactSeverity >= 1) {
+  //     inputError = inputError ?? t('Price Impact High')
+  //   }
+  // }
 
   const formattedTo = isAddress(to)
   if (!to || !formattedTo) {

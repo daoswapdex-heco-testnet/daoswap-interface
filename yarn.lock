@@ -1179,10 +1179,15 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@daoswap-heco-testnet/daoswap-sdk@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/@daoswap-heco-testnet/daoswap-sdk/-/daoswap-sdk-1.0.2.tgz#2f7c36114527a48d0c3f97a13a9b504bdbb063aa"
-  integrity sha512-j/o07E3IJConnGkTQ7tMKjXVXVWqkY0a6Y9L8cTV30DhfAKYeCUhxlVmBrNyTDLGd4yd9hLrB9SAF4TiiUwn4w==
+"@uniswap/token-lists@^1.0.0-beta.21":
+  version "1.0.0-beta.21"
+  resolved "https://registry.npmjs.org/@uniswap/token-lists/-/token-lists-1.0.0-beta.21.tgz#a7877f592198c42b280821db1ff6c58ce1752347"
+  integrity sha512-krNzt3FDDW69M9qFda/1lNYfy2wGpGxZF2YH2YcfCw0MGd/B+N6jymPJmRrxykbYDLYz6Xr8bjmGjJ3hdBR41A==
+
+"@daoswapdex-heco-testnet/daoswap-sdk@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@daoswapdex-heco-testnet/daoswap-sdk/-/daoswap-sdk-1.0.1.tgz#7c6c8460aabfbfca9f8008524a4aa1f7173ed333"
+  integrity sha512-MXUKBEBFJasS2+TBzr69q/RjXkPJeHFdZfT8DXWEPtGftWgYavlzyEgwvQTMAcfQNRega2t6LImupr4X5TkCag==
   dependencies:
     big.js "^5.2.2"
     decimal.js-light "^2.5.0"
@@ -1190,11 +1195,6 @@
     tiny-invariant "^1.1.0"
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
-
-"@uniswap/token-lists@^1.0.0-beta.21":
-  version "1.0.0-beta.21"
-  resolved "https://registry.npmjs.org/@uniswap/token-lists/-/token-lists-1.0.0-beta.21.tgz#a7877f592198c42b280821db1ff6c58ce1752347"
-  integrity sha512-krNzt3FDDW69M9qFda/1lNYfy2wGpGxZF2YH2YcfCw0MGd/B+N6jymPJmRrxykbYDLYz6Xr8bjmGjJ3hdBR41A==
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
