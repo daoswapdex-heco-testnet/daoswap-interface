@@ -191,7 +191,7 @@
   "Initializing...": "正在初始化...",
 
   "Liquidity provider rewards": "流动性提供者奖励",
-  "Liquidity providers earn a 0.3% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "流动性提供者在所有交易中赚取0.3%的费用，与他们在资金池中的份额成比例。费用在移除流动性前都将被添加到池中，实时累积，并且可以通过提取流动资金来申请。",
+  "Liquidity providers earn a 0.2% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "流动性提供者在所有交易中赚取0.2%的费用，与他们在资金池中的份额成比例。费用在移除流动性前都将被添加到池中，实时累积，并且可以通过提取流动资金来申请。",
   "Read more about providing liquidity": "了解更多有关提供流动性的信息",
   "Your liquidity": "你的流动性",
   "Create a pair": "创建交易对",
@@ -206,7 +206,7 @@
   "Import it.": "导入它。",
   "Your position": "你的位置",
   "Your pool share": "你的流动池份额",
-  "By adding liquidity you&apos;ll earn 0.3% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "通过增加流动性，您将获得这对组合中所有交易的0.3%，与您在池中的份额成比例。费用在移除流动性前都将被添加到池中，实时累积，并且可以通过提取流动资金来申请。",
+  "By adding liquidity you&apos;ll earn 0.2% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "通过增加流动性，您将获得这对组合中所有交易的0.2%，与您在池中的份额成比例。费用在移除流动性前都将被添加到池中，实时累积，并且可以通过提取流动资金来申请。",
   "Manage": "管理",
   "Your pool tokens": "你的流动池代币",
   "Pooled": "已添加",
@@ -265,6 +265,7 @@
   "Rewards begin in": "奖励开始于",
   "Rewards end in": "奖励结束于",
   "Rewards have ended!": "奖励已经结束!",
+  "Rewards not started yet.": "奖励还没开始.",
   "Total deposited": "存入总额",
   "Pool rate": "池子比例",
   "Your rate": "你的比例",
@@ -318,5 +319,6 @@
   "Pledging DAO to share 0.1% fees of all pool.": "质押DAO成为社区治理节点，分全平台手续费。",
   "Function development, please wait patiently...": "功能开发中，请耐心等待...",
 
-  "Bridge": "跨链桥"
+  "Bridge": "跨链桥",
+  "changeLanguage": "切换语言"
 }

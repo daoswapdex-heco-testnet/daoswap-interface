@@ -206,7 +206,7 @@
   "Initializing...": "Initializing...",
 
   "Liquidity provider rewards": "Liquidity provider rewards",
-  "Liquidity providers earn a 0.3% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "Liquidity providers earn a 0.3% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.",
+  "Liquidity providers earn a 0.2% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "Liquidity providers earn a 0.2% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.",
   "Read more about providing liquidity": "Read more about providing liquidity",
   "Your liquidity": "Your liquidity",
   "Create a pair": "Create a pair",
@@ -221,7 +221,7 @@
   "Import it.": "Import it.",
   "Your position": "Your position",
   "Your pool share": "Your pool share",
-  "By adding liquidity you&apos;ll earn 0.3% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "By adding liquidity you&apos;ll earn 0.3% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.",
+  "By adding liquidity you&apos;ll earn 0.2% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.": "By adding liquidity you&apos;ll earn 0.2% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.",
   "Manage": "Manage",
   "Your pool tokens": "Your pool tokens",
   "Pooled": "Pooled",
@@ -280,6 +280,7 @@
   "Rewards begin in": "Rewards begin in",
   "Rewards end in": "Rewards end in",
   "Rewards have ended!": "Rewards have ended!",
+  "Rewards not started yet.": "Rewards not started yet.",
   "Total deposited": "Total deposited",
   "Pool rate": "Pool rate",
   "Your rate": "Your rate",
@@ -333,5 +334,6 @@
   "Pledging DAO to share 0.1% fees of all pool.": "Pledging DAO to share 0.1% fees of all pool.",
   "Function development, please wait patiently...": "Function development, please wait patiently...",
 
-  "Bridge": "Bridge"
+  "Bridge": "Bridge",
+  "changeLanguage": "ChangeLanguage"
 }
