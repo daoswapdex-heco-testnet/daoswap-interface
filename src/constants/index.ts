@@ -50,6 +50,13 @@ export const DTC2_HECO_TESTNET = new Token(
   'DTC2',
   'Daoswap Test Coin 2'
 )
+export const USDC_HECO_TESTNET = new Token(
+  ChainId.HECO_TESTNET,
+  '0x94f22515ade71ea7e0d439b730421a64b14bd2c8',
+  18,
+  'USDC',
+  'USD//C'
+)
 
 // Block time here is slightly higher (~1s) than average in order to avoid ongoing proposals past the displayed time
 export const AVERAGE_BLOCK_TIME_IN_SECS = 14

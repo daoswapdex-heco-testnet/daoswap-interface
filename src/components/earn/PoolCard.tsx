@@ -4,7 +4,8 @@ import { RowBetween } from '../Row'
 import styled from 'styled-components'
 import { TYPE, StyledInternalLink } from '../../theme'
 import DoubleCurrencyLogo from '../DoubleLogo'
-import { ETHER, JSBI, TokenAmount } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { ETHER, JSBI, TokenAmount, Price } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { USDC_HECO_TESTNET } from '../../constants'
 import { ButtonPrimary } from '../Button'
 import { StakingInfo } from '../../state/stake/hooks'
 import { useColor } from '../../hooks/useColor'
@@ -113,6 +114,10 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
   const valueOfTotalStakedAmountInUSDC =
     valueOfTotalStakedAmountInWETH && USDPrice?.quote(valueOfTotalStakedAmountInWETH)
 
+  // TODO: 修改价格 get ths USD value the Reward Token
+  const USDPriceForRewardToken = new Price(USDC_HECO_TESTNET, USDC_HECO_TESTNET, '1', '1') // useUSDCPrice(stakingInfo.earnedAmount.currency)
+  console.info(USDPriceForRewardToken.raw)
+
   return (
     <Wrapper showBackground={isStaking} bgColor={backgroundColor}>
       <CardBGImage desaturate />
@@ -163,6 +168,24 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
               {`${stakingInfo.rewardRate
                 ?.multiply(`${60 * 60 * 24 * 7}`)
                 ?.toSignificant(4, { groupSeparator: ',' })} DAO / ${t('week')}`}
+            </TYPE.black>
+          </BottomSection>
+          <BottomSection showBackground={true}>
+            <TYPE.black color={'white'} fontWeight={500}>
+              <span>{t('Annual rate')}</span>
+            </TYPE.black>
+
+            <TYPE.black style={{ textAlign: 'right' }} color={'white'} fontWeight={500}>
+              {`${stakingInfo.rewardRate
+                ?.multiply(`${60 * 60 * 24 * 365}`)
+                .multiply(USDPriceForRewardToken)
+                ?.divide(
+                  valueOfTotalStakedAmountInUSDC
+                    ? valueOfTotalStakedAmountInUSDC.toFixed(0, { groupSeparator: ',' })
+                    : '1000'
+                )
+                ?.multiply('100')
+                .toSignificant(4, { groupSeparator: ',' })} %`}
             </TYPE.black>
           </BottomSection>
         </>
