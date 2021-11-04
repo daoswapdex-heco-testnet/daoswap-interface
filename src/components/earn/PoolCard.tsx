@@ -117,20 +117,20 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
 
   // TODO: 修改价格 get ths USD value the Reward Token
   const USDPriceForRewardToken = new Price(USDC_HECO_TESTNET, USDC_HECO_TESTNET, '1', '1') // useUSDCPrice(stakingInfo.earnedAmount.currency)
+  const USDPriceForRewardTokenMultiply1000 = USDPriceForRewardToken?.raw.multiply(JSBI.BigInt(1000))
 
   // totalRewardRate of Year
   const yearRewardRate = JSBI.multiply(stakingInfo.totalRewardRate.raw, JSBI.BigInt(60 * 60 * 24 * 365))
   const yearRewardValue = JSBI.multiply(
     yearRewardRate,
-    JSBI.BigInt(USDPriceForRewardToken.raw.toSignificant(4, { groupSeparator: ',' }))
+    JSBI.BigInt(USDPriceForRewardTokenMultiply1000 ? USDPriceForRewardTokenMultiply1000?.toFixed(0) : JSBI.BigInt('0'))
   )
 
-  //annual rate
-  const annualRate = JSBI.divide(
-    yearRewardValue,
-    valueOfTotalStakedAmountInUSDC?.raw ? valueOfTotalStakedAmountInUSDC.raw : JSBI.BigInt('1000')
+  const annualRateUp = Number(JSBI.divide(yearRewardValue, JSBI.BigInt(1000)).toString())
+  const annualRateDown = Number(
+    valueOfTotalStakedAmountInUSDC?.raw ? valueOfTotalStakedAmountInUSDC.raw : JSBI.BigInt(1).toString()
   )
-  const annualRatePercent = JSBI.multiply(annualRate, JSBI.BigInt(100))
+  const annualRatePercent = annualRateDown > 0 ? ((annualRateUp / annualRateDown) * 100).toFixed(2) : 0
 
   return (
     <Wrapper showBackground={isStaking} bgColor={backgroundColor}>
