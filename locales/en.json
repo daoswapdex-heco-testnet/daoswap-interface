@@ -284,7 +284,7 @@
   "Total deposited": "Total deposited",
   "Pool rate": "Pool rate",
   "Your rate": "Your rate",
-  "Annual rate": "Annual rate",
+  "Annual rate": "APR",
   "week": "week",
   "Deposit": "Deposit",
   "Liquidity Mining": "Liquidity Mining",
@@ -336,5 +336,7 @@
   "Function development, please wait patiently...": "Function development, please wait patiently...",
 
   "Bridge": "Bridge",
-  "changeLanguage": "ChangeLanguage"
+  "changeLanguage": "ChangeLanguage",
+  "Hash Mining": "Hash Mining",
+  "Competition Mining": "Competition Mining"
 }
