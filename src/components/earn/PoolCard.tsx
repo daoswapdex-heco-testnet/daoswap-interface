@@ -159,17 +159,17 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
               : `${valueOfTotalStakedAmountInWETH?.toSignificant(4, { groupSeparator: ',' }) ?? '-'} HT`}
           </TYPE.white>
         </RowBetween>
-        <RowBetween>
+        {/* <RowBetween>
           <TYPE.white> {t('Pool rate')} </TYPE.white>
           <TYPE.white>{`${stakingInfo.totalRewardRate
             ?.multiply(`${60 * 60 * 24 * 7}`)
             ?.toFixed(0, { groupSeparator: ',' })} DAO / ${t('week')}`}</TYPE.white>
-        </RowBetween>
+        </RowBetween> */}
       </StatContainer>
 
       <Break />
 
-      {isStaking && (
+      {/* {isStaking && (
         <>
           <BottomSection showBackground={true}>
             <TYPE.black color={'white'} fontWeight={500}>
@@ -186,7 +186,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
             </TYPE.black>
           </BottomSection>
         </>
-      )}
+      )} */}
 
       <>
         <BottomSection showBackground={true}>

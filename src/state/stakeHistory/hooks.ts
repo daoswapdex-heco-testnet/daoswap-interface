@@ -3,7 +3,7 @@ import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@daoswa
 import { useMemo } from 'react'
 // TODO:Daoswap ERC20
 import { UNI } from '../../constants'
-import { DTC1_HECO_TESTNET, DTC2_HECO_TESTNET } from '../../constants'
+// import { DTC1_HECO_TESTNET, DTC2_HECO_TESTNET } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -24,10 +24,10 @@ export const STAKING_REWARDS_INFO: {
   }[]
 } = {
   [ChainId.HECO_TESTNET]: [
-    {
-      tokens: [DTC1_HECO_TESTNET, DTC2_HECO_TESTNET],
-      stakingRewardAddress: '0xf4e1B5A0E99260c8f7096524811711542A5C3A56'
-    }
+    // {
+    //   tokens: [DTC1_HECO_TESTNET, DTC2_HECO_TESTNET],
+    //   stakingRewardAddress: '0xf4e1B5A0E99260c8f7096524811711542A5C3A56'
+    // }
   ]
 }
 

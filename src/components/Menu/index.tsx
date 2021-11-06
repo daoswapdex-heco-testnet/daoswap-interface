@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { BookOpen, Info, MessageCircle, PieChart, Link } from 'react-feather'
+import { BookOpen, Info, MessageCircle, PieChart, Link, Gift, Layers } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
@@ -139,11 +139,11 @@ export default function Menu() {
             {t('Bridge')}
           </MenuItemHref>
           <MenuItemHref id="link" href="https://test.www.daoswap.cc/hash-mining" target="_self">
-            <Link size={14} />
+            <Layers size={14} />
             {t('Hash Mining')}
           </MenuItemHref>
           <MenuItemHref id="link" href="https://test.www.daoswap.cc/competition-mining" target="_self">
-            <Link size={14} />
+            <Gift size={14} />
             {t('Competition Mining')}
           </MenuItemHref>
         </MenuFlyout>

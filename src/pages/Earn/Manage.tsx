@@ -3,7 +3,7 @@ import { AutoColumn } from '../../components/Column'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { JSBI, TokenAmount, ETHER } from '@daoswapdex-heco-testnet/daoswap-sdk'
+import { JSBI, TokenAmount, ETHER, Price } from '@daoswapdex-heco-testnet/daoswap-sdk'
 import { RouteComponentProps } from 'react-router-dom'
 import DoubleCurrencyLogo from '../../components/DoubleLogo'
 import { useCurrency } from '../../hooks/Tokens'
@@ -27,8 +27,9 @@ import { currencyId } from '../../utils/currencyId'
 import { useTotalSupply } from '../../data/TotalSupply'
 import { usePair } from '../../data/Reserves'
 import usePrevious from '../../hooks/usePrevious'
-import useUSDCPrice from '../../utils/useUSDCPrice'
+// import useUSDCPrice from '../../utils/useUSDCPrice'
 import { BIG_INT_ZERO } from '../../constants'
+import { USDC_HECO_TESTNET } from '../../constants'
 import { useTranslation } from 'react-i18next'
 
 const PageWrapper = styled(AutoColumn)`
@@ -141,7 +142,8 @@ export default function Manage({
   const countUpAmountPrevious = usePrevious(countUpAmount) ?? '0'
 
   // get the USD value of staked WETH
-  const USDPrice = useUSDCPrice(WETH)
+  // const USDPrice = useUSDCPrice(WETH)
+  const USDPrice = new Price(WETH ? WETH : USDC_HECO_TESTNET, WETH ? WETH : USDC_HECO_TESTNET, '1', '3')
   const valueOfTotalStakedAmountInUSDC =
     valueOfTotalStakedAmountInWETH && USDPrice?.quote(valueOfTotalStakedAmountInWETH)
 
@@ -175,10 +177,9 @@ export default function Manage({
             </TYPE.body>
           </AutoColumn>
         </PoolData>
-        <PoolData>
+        {/* <PoolData>
           <AutoColumn gap="sm">
             <TYPE.body style={{ margin: 0 }}>{t('Pool Rate')}</TYPE.body>
-            {/* // TODO:Daoswap UNI -> DAO */}
             <TYPE.body fontSize={24} fontWeight={500}>
               {stakingInfo?.totalRewardRate
                 ?.multiply((60 * 60 * 24 * 7).toString())
@@ -186,7 +187,7 @@ export default function Manage({
               {` DAO / ${t('week')}`}
             </TYPE.body>
           </AutoColumn>
-        </PoolData>
+        </PoolData> */}
       </DataRow>
 
       {showAddLiquidityButton && (
@@ -299,18 +300,17 @@ export default function Manage({
                   />
                 </TYPE.largeHeader>
               </RowBetween>
-              <RowBetween style={{ alignItems: 'baseline' }}>
+              {/* <RowBetween style={{ alignItems: 'baseline' }}>
                 <TYPE.black fontSize={16} fontWeight={500}>
                   <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px ' }}>
                     ⚡
                   </span>
-                  {/* // TODO:Daoswap UNI -> DAO */}
                   {stakingInfo?.rewardRate
                     ?.multiply((60 * 60 * 24 * 7).toString())
                     ?.toSignificant(4, { groupSeparator: ',' }) ?? '-'}
                   {` DAO / ${t('week')}`}
                 </TYPE.black>
-              </RowBetween>
+              </RowBetween> */}
             </AutoColumn>
           </StyledBottomCard>
         </BottomSection>
