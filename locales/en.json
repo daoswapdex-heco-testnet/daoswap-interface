@@ -338,5 +338,8 @@
   "Bridge": "Bridge",
   "changeLanguage": "ChangeLanguage",
   "Hash Mining": "Hash Mining",
-  "Competition Mining": "Competition Mining"
+  "Competition Mining": "Competition Mining",
+
+  "Announcement": "Announcement",
+  "You have a new announcement": "You have a new announcement"
 }
