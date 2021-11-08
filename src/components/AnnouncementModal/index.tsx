@@ -30,16 +30,21 @@ function ConfirmationContent({ onDismiss }: { onDismiss: () => void }) {
         </RowBetween>
         <AutoColumn gap="auto" justify={'start'}>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            1，首次流动性挖矿将于2021年11月9日上午11点至2021年11月23日上午11点，针对以下矿池开启。
+            {t(
+              '1, The first liquidity mining will be opened from November 9, 2021 at 11&#58;00 AM to November 23, 2021 at 11&#58;00 AM for the following mining pools.'
+            )}
             <br />
             USDT/DAO，USDT/ETH，USDT/HFIL，USDT/HT。
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            2，据官方消息，布局元宇宙生态的DAOSWAP
-            DEX已通过区块链安全公司CertiK的安全审计。CertiK通过技术专家对整个代码库全面逐行手动检查，针对各类攻击问题测试智能合约的安全性，并确保合约符合当前行业标准与客户规范等。报告显示，DAOSWAOP并无严重和重大漏洞，部分次要问题已得到解决。
+            {t(
+              '2, According to official news, DAOSWAP DEX, which lays out the meta-universe ecology, has passed security audit by CertiK. CertiK tests the security of smart contracts against various types of attack issues by manually checking the entire code base line by line by technical experts and ensuring that the contracts comply with current industry standards and customer specifications, etc. The report shows that there are no serious and significant vulnerabilities in DAOSWAOP, and some minor issues have been resolved.'
+            )}
           </Text>
           <Text fontWeight={500} fontSize={14} margin={10}>
-            3，DAOSWAP交易币种增加至：DAO，ETH，UNI，FIL，HT，MDEX，DOGE，SHIB、ZEC、ZKS等近十余种主流代币。并可直接通过USDT和DAO购买上述代币。
+            {t(
+              '3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.'
+            )}
           </Text>
         </AutoColumn>
       </Section>
