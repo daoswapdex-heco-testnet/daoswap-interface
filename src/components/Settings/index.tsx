@@ -125,6 +125,28 @@ const ModalContentWrapper = styled.div`
   border-radius: 20px;
 `
 
+const FancyButton = styled.button`
+  color: ${({ theme }) => theme.bg5};
+  align-items: center;
+  height: 2rem;
+  border-radius: 36px;
+  font-size: 1rem;
+  width: auto;
+  min-width: 3.5rem;
+  border: 0;
+  outline: none;
+  background: ${({ theme }) => theme.bg1};
+`
+
+const ChangeLanguageButton = styled(FancyButton)<{ active: boolean }>`
+  margin-right: 8px;
+  :hover {
+    cursor: pointer;
+  }
+  background-color: ${({ active, theme }) => active && theme.primary1};
+  color: ${({ active, theme }) => (active ? theme.white : theme.text1)};
+`
+
 export default function SettingsTab() {
   const { t } = useTranslation()
   const node = useRef<HTMLDivElement>()
@@ -251,9 +273,15 @@ export default function SettingsTab() {
                   {t('changeLanguage')}
                 </TYPE.black>
               </RowFixed>
-              <button onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en')}>
+              {/* <button onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en')}>
                 {i18next.language === 'en' ? 'zh' : 'en'}
-              </button>
+              </button> */}
+              <ChangeLanguageButton
+                onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en')}
+                active={darkMode}
+              >
+                {i18next.language === 'en' ? 'zh' : 'en'}
+              </ChangeLanguageButton>
               {/* <ButtonPrimary onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'zh' : 'en')}>
                 {i18next.language === 'en' ? 'zh' : 'en'}
               </ButtonPrimary> */}
