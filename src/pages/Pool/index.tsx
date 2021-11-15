@@ -13,6 +13,7 @@ import Card from '../../components/Card'
 import { RowBetween, RowFixed } from '../../components/Row'
 import { ButtonPrimary, ButtonSecondary } from '../../components/Button'
 import { AutoColumn } from '../../components/Column'
+import { NodeType } from '../../components/NodeType'
 
 import { useActiveWeb3React } from '../../hooks'
 import { usePairs } from '../../data/Reserves'
@@ -141,6 +142,8 @@ export default function Pool() {
           <CardBGImage />
           <CardNoise />
         </VoteCard>
+
+        {!v2IsLoading && allV2PairsWithLiquidity.length > 0 ? <NodeType pairs={allV2PairsWithLiquidity} /> : null}
 
         <AutoColumn gap="lg" justify="center">
           <AutoColumn gap="lg" style={{ width: '100%' }}>

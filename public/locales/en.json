@@ -344,5 +344,10 @@
   "You have a new announcement": "You have a new announcement",
   "1, The first liquidity mining will be opened from November 9, 2021 at 11&#58;00 AM to November 23, 2021 at 11&#58;00 AM for the following mining pools.": "1, The first liquidity mining will be opened from November 9, 2021 at 11:00 AM to November 23, 2021 at 11:00 AM for the following mining pools.",
   "2, According to official news, DAOSWAP DEX, which lays out the meta-universe ecology, has passed security audit by CertiK. CertiK tests the security of smart contracts against various types of attack issues by manually checking the entire code base line by line by technical experts and ensuring that the contracts comply with current industry standards and customer specifications, etc. The report shows that there are no serious and significant vulnerabilities in DAOSWAOP, and some minor issues have been resolved.": "2, According to official news, DAOSWAP DEX, which lays out the meta-universe ecology, has passed security audit by CertiK. CertiK tests the security of smart contracts against various types of attack issues by manually checking the entire code base line by line by technical experts and ensuring that the contracts comply with current industry standards and customer specifications, etc. The report shows that there are no serious and significant vulnerabilities in DAOSWAOP, and some minor issues have been resolved.",
-  "3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.": "3, DAOSWAP trading paris increased to: DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO."
+  "3, DAOSWAP trading paris increased to&#58; DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.": "3, DAOSWAP trading paris increased to: DAO, ETH, UNI, FIL, HT, MDEX, DOGE, SHIB, ZEC, ZKS etc. Now you can buy the above tokens directly through USDT and DAO.",
+
+  "Node Type": "Node Type",
+  "NodeType None": "None",
+  "NodeType Stellar": "Stellar",
+  "NodeType Planet": "Planet"
 }
