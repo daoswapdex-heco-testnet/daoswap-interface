@@ -349,5 +349,10 @@
   "Node Type": "Node Type",
   "NodeType None": "None",
   "NodeType Stellar": "Stellar",
-  "NodeType Planet": "Planet"
+  "NodeType Planet": "Planet",
+  "About Node": "About Node",
+  "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.": "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.",
+  "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.": "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.",
+  "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).": "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).",
+  "Aurora CAC, effective on November 17, 2021.": "Aurora CAC, effective on November 17, 2021."
 }

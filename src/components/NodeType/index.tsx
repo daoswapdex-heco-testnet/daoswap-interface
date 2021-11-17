@@ -74,7 +74,21 @@ export function NodeType({ pairs }: { pairs: Pair[] }) {
           <TYPE.body color={theme.text3} textAlign="center">
             {t('Node Type')}: {t(`NodeType ${NodeTypeName}`)}
           </TYPE.body>
-          <QuestionHelper text={t('node type info')} />
+          <QuestionHelper
+            text={
+              t(
+                '1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.'
+              ) +
+              '<br/>' +
+              t('2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.') +
+              '<br/>' +
+              t(
+                '3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).'
+              ) +
+              '<br/>' +
+              t('Aurora CAC, effective on November 17, 2021.')
+            }
+          />
         </RowBetween>
       </EmptyProposals>
     </AutoColumn>
