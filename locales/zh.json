@@ -334,5 +334,10 @@
   "Node Type": "节点类型",
   "NodeType None": "无",
   "NodeType Stellar": "恒星",
-  "NodeType Planet": "行星"
+  "NodeType Planet": "行星",
+  "About Node": "关于节点说明",
+  "1, Planet and Stellar node status will be determined by the number of DAO/USDT pool liquidity provider certificates (LP) held.": "1，行星与恒星节点身份将由所持有DAO/USDT池流动性证明（LP）数量判定。",
+  "2, Planet nodes need >=1000 LP and Stellar need >=10000 LP.": "2，行星节点需要>=1000 LP，恒星需要>=10000 LP。",
+  "3, The above criteria are valid within DAO price <= 30USDT, after >= 30USDT it will be decided by community vote (whether to consider lowering LP value criteria).": "3，上述标准在DAO价格<=30U以内有效，当>=30U后由社区投票决定（是否考虑降低LP值标准）。",
+  "Aurora CAC, effective on November 17, 2021.": "极光社区自治委员会，2021年11月17日22:00时开始生效。"
 }
