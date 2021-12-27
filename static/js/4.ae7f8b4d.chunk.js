@@ -1,2 +1,0 @@
-(this["webpackJsonp@daoswapdex-heco-testnet/daoswap-interface"]=this["webpackJsonp@daoswapdex-heco-testnet/daoswap-interface"]||[]).push([[4],{824:function(n,t){},868:function(n,t){},870:function(n,t){},886:function(n,t){},888:function(n,t){},900:function(n,t){},917:function(n,t){},920:function(n,t){},922:function(n,t){}}]);
-//# sourceMappingURL=4.ae7f8b4d.chunk.js.map
