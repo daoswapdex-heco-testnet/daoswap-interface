@@ -35,13 +35,17 @@ export default function StakingLP() {
       period: 2,
       name: 'StakingPeriod2',
       capAmount: 50000,
-      apr: 342
+      apr: 120,
+      aprDAO: 60,
+      aprDST: 60
     },
     {
       period: 1,
       name: 'StakingPeriod1',
       capAmount: 50000,
-      apr: 342
+      apr: 120,
+      aprDAO: 60,
+      aprDST: 60
     }
   ]
 

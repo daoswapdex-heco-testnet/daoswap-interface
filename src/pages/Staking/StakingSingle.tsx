@@ -35,7 +35,9 @@ export default function StakingSingle() {
       period: 1,
       name: 'StakingPeriod1',
       capAmount: 50000,
-      apr: 342
+      apr: 60,
+      aprDAO: 30,
+      aprDST: 30
     }
   ]
 

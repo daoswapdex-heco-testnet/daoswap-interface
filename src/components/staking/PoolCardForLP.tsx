@@ -100,7 +100,12 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
       <StatContainer>
         <RowBetween>
           <TYPE.white>{t('Annual rate')}</TYPE.white>
-          <TYPE.white>{stakingInfo.apr} %</TYPE.white>
+          <TYPE.white textAlign={'right'}>
+            {stakingInfo.apr} %{' '}
+            <TYPE.white fontSize={9}>
+              (DAO {stakingInfo.aprDAO}% / DST {stakingInfo.aprDST}%)
+            </TYPE.white>
+          </TYPE.white>
         </RowBetween>
       </StatContainer>
 
