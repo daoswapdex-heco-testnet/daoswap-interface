@@ -29,6 +29,8 @@ import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redir
 import Swap from './Swap'
 import { RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 import Governace from './Governace'
+import StakingLP from './Staking/StakingLP'
+import StakingSingle from './Staking/StakingSingle'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -104,6 +106,8 @@ export default function App() {
               <Route exact strict path="/dao/:currencyIdA/:currencyIdB" component={Manage} />
               <Route exact strict path="/dao-history/:currencyIdA/:currencyIdB" component={ManageHistory} />
               <Route exact strict path="/governace" component={Governace} />
+              <Route exact strict path="/staking-lp" component={StakingLP} />
+              <Route exact strict path="/staking-single" component={StakingSingle} />
               <Route component={RedirectPathToSwapOnly} />
             </Switch>
           </Web3ReactManager>

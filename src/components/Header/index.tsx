@@ -274,9 +274,12 @@ export default function Header() {
           <StyledNavLink id={`stake-nav-link`} to={'/dao'}>
             DAO
           </StyledNavLink>
-          <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
-            {t('Governace')}
+          <StyledNavLink id={`staking-lp-nav-link`} to={'/staking-lp'}>
+            {t('Node')}
           </StyledNavLink>
+          {/* <StyledNavLink id={`governace-nav-link`} to={'/governace'}>
+            {t('Governace')}
+          </StyledNavLink> */}
           <StyledHrefLink href="https://info.heco.daoswap.cc" target="_self">
             {t('Charts')}
           </StyledHrefLink>
