@@ -86,7 +86,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: any }) {
       <CardNoise />
 
       <TopSection>
-        <TYPE.white fontWeight={600} fontSize={24} style={{ width: '100%' }}>
+        <TYPE.white fontWeight={600} fontSize={18} style={{ width: '100%' }}>
           {t(stakingInfo.name)}
         </TYPE.white>
       </TopSection>

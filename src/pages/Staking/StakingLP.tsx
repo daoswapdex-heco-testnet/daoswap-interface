@@ -32,6 +32,12 @@ export default function StakingLP() {
 
   const stakingList: any[] = [
     {
+      period: 2,
+      name: 'StakingPeriod2',
+      capAmount: 50000,
+      apr: 342
+    },
+    {
       period: 1,
       name: 'StakingPeriod1',
       capAmount: 50000,
@@ -51,7 +57,11 @@ export default function StakingLP() {
                 <TYPE.white fontWeight={600}>{t('Hash Node Staking')}</TYPE.white>
               </RowBetween>
               <RowBetween>
-                <TYPE.white fontSize={14}>{t('Stake DAO/USDT LP, share 1/3 fee.')}</TYPE.white>
+                <TYPE.white fontSize={9}>
+                  {t('Stake DAO/USDT LP, share 1/3 fee.')}
+                  <br />
+                  <TYPE.white fontSize={9}>0xa9bB710996d6ed61B83a5EAB583bAe683199c2de</TYPE.white>
+                </TYPE.white>
               </RowBetween>
             </AutoColumn>
           </CardSection>

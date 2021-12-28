@@ -51,7 +51,7 @@ export default function StakingSingle() {
                 <TYPE.white fontWeight={600}>{t('DAO Staking')}</TYPE.white>
               </RowBetween>
               <RowBetween>
-                <TYPE.white fontSize={14}>{t('Stake DAO to get extra income.')}</TYPE.white>
+                <TYPE.white fontSize={9}>{t('Stake DAO to get extra income.')}</TYPE.white>
               </RowBetween>
             </AutoColumn>
           </CardSection>
