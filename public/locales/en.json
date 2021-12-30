@@ -345,8 +345,9 @@
   "Stake DAO to get extra income.": "Stake DAO to get extra income.",
   "Stake": "Stake",
   "Cap Amount": "Cap Amount",
-  "StakingPeriod1": "Phase 1: 365 days",
-  "StakingPeriod2": "Phase 2: 365 days",
+  "StakingLPPeriod1": "Phase 1: 365 days",
+  "StakingLPPeriod2": "Phase 2: 365 days",
+  "StakingDAOPeriod1": "365 days",
 
   "Bridge": "Bridge",
   "changeLanguage": "ChangeLanguage",

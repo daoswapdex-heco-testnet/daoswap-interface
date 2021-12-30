@@ -330,8 +330,9 @@
   "Stake DAO to get extra income.": "质押DAO，获得额外收益。",
   "Stake": "去质押",
   "Cap Amount": "封顶额度",
-  "StakingPeriod1": "一期：质押365天",
-  "StakingPeriod2": "二期：质押365天",
+  "StakingLPPeriod1": "一期：质押365天",
+  "StakingLPPeriod2": "二期：质押365天",
+  "StakingDAOPeriod1": "质押365天",
 
   "Bridge": "跨链桥",
   "changeLanguage": "切换语言",

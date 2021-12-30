@@ -33,7 +33,7 @@ export default function StakingSingle() {
   const stakingList: any[] = [
     {
       period: 1,
-      name: 'StakingPeriod1',
+      name: 'StakingDAOPeriod1',
       capAmount: 50000,
       apr: 60,
       aprDAO: 30,
